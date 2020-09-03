@@ -1,0 +1,23 @@
+---
+label: Social & Contact
+hide_body: true
+fields:
+- name: email
+  type: text
+  config:
+    required: true
+    min: 1
+  description: email address for contact
+  label: Email
+- name: instagram
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Instagram
+- name: instagram_posts
+  type: image_gallery
+  config: {}
+  label: Instagram Posts
+pages:
+- src/content/contact.md

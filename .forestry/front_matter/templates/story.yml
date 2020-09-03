@@ -1,0 +1,32 @@
+---
+label: Story
+hide_body: true
+display_field: story
+fields:
+- name: template
+  label: Template
+  type: text
+  hidden: true
+  default: about
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 1
+  label: Intro
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 1
+  label: Body
+pages:
+- src/content/story.md

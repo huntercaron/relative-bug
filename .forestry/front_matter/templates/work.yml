@@ -1,0 +1,44 @@
+---
+label: Work
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: company
+  type: select
+  default: Futurezona
+  config:
+    required: true
+    options:
+    - Futurezona
+    - Tavern
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Company
+  description: Whether the work is from Futurezona or Tavern
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: now
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: project
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: gallery_images
+  label: Gallery images
+  type: image_gallery
+  hidden: false
+  default: ''
